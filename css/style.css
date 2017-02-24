@@ -1,57 +1,87 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
+body{
+  background: #efefef;
+  font-size: 12pt;
+  color: #505050;
+  font-family: 'Nunito', sans-serif;
+}
+.intro{
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.btn {
+  background: #3dadf2;
+  background-image: -webkit-linear-gradient(top, #3dadf2, #2980b9);
+  background-image: -moz-linear-gradient(top, #3dadf2, #2980b9);
+  background-image: -ms-linear-gradient(top, #3dadf2, #2980b9);
+  background-image: -o-linear-gradient(top, #3dadf2, #2980b9);
+  background-image: linear-gradient(to bottom, #3dadf2, #2980b9);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #3b94cc 1px;
+  text-decoration: none;
 }
 
-p {
-  line-height: 2rem;
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  color: #fff;
 }
 
-.button-collapse {
-  color: #26a69a;
+.karya {
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px;
+    background: white;
+    border-radius: 3px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: 550px;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
+.karya-img {
     width: 100%;
+    height: 100%;
+    background-size: cover;
   }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+.karya-info{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
 }
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+.karya-info-title{
+  color: #000;
 }
-
-.icon-block {
-  padding: 0 15px;
+.karya:hover .karya-info{
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  color: #888;
+  /*text-align: center;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 11pt;
 }
-.icon-block .material-icons {
-  font-size: inherit;
+.karya:hover .karya-img{
+  display: none;
 }
-
-footer.page-footer {
-  margin: 0;
+.social-btn{
+  font-size: 16pt;
+  color: #333;
+}
+footer{
+  text-align: center;
+  margin-top: 130px;
+  font-size: 9pt;
+  font-weight: bold;
 }
