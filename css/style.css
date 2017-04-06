@@ -85,3 +85,7 @@ footer{
   font-size: 9pt;
   font-weight: bold;
 }
+.modal-body {
+    width: 80%!important;
+    margin: auto!important;
+}
