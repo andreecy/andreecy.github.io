@@ -9,6 +9,11 @@ setup({
     className: true, // to enable – suppports `class` property as well
   },
   /* other twind configuration options */
+  theme: {
+    fontFamily: {
+      sans: ['Outfit', 'sans-serif'],
+    },
+  }
 })
 
 render(<App />, document.getElementById('app') as HTMLElement)
